@@ -9,27 +9,29 @@ import org.jointheleague.graphical.robot.Robot;
 // This recipe draws a square using the Robot
 
 public class RobotSquare {
-    public static <varName> void main(String[] args) throws Exception {
+    public static void main(String[] args) {
  
     	// 1. Make a new Robot
-Robot varName=new Robot();
+Robot R2D2 =new Robot();
     	// 3. Put the robot's pen down
-varName.penDown();
-varName.setPenColor(255,255,255);    	
+R2D2.penDown();
+R2D2.setPenColor(255,255,255);    	
 
         // 6. Make the robot move as fast as possible
-
+R2D2.setSpeed(100);
 
         // 5. Do everything below here 4 times
-
+for (int i = 0; i < 4; i++) {
+	
+	
 
         //         2. Move your robot 200 pixels
-
+R2D2.move(200);
 
         //         4. Turn the robot 90 degrees to the right (90 degrees)
+R2D2.turn(90);
 
-
-		
+}
 	}
 
 	private static void move(int i) {
